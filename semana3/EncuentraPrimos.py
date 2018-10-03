@@ -13,3 +13,4 @@ for j in range(10, 90+1):
     if(divisibles == 1):
         print("El numero {} SI es primo".format(ingresado))
 
+

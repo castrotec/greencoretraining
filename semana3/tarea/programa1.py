@@ -1,7 +1,7 @@
 ################################################
 # File name: Tarea semana #3, Programa #1      #
 # Author:    Jorge Castro                      #
-# Submission: October 5, 2018                  #
+# Submission: October 6, 2018                  #
 # Instructor: Pedro Guzman                     #
 ################################################
 

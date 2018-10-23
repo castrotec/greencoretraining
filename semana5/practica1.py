@@ -1,0 +1,3 @@
+#Practica
+
+print("Hola mundo")

@@ -12,6 +12,7 @@ class Persona (object):
 
     # -------------------------
     # METODO
+    # Todos los metodos al inicio deben llevar el self, incluido el constructor
     # -------------------------
 
     # Metodo constructor
@@ -20,11 +21,18 @@ class Persona (object):
 
     def __init__(self, nombre, apellido, cedula, edad = None, *args, **kwargs):
         self.nombre = nombre
-        self.apellido = apellido
+        self._apellido = apellido
         self.edad = edad
         self.cedula = cedula
         if "profesion" in kwargs:
             self.profesion = kwargs["profesion"]
+
+    def get_full_name(self):
+        return "{} {}".format(self.nombre, self._apellido)
+
+    @property
+    def full_name(self):
+        return "{} {}".format(self.nombre, self._apellido)
 
 persona = Persona(
     "Jorge",
@@ -37,4 +45,9 @@ persona = Persona(
 
 # Por tanto *args es una lista, mientras que **kwargs es un diccionario
 
-print(persona.profesion)
+# TODO METODO ATRIBUTO QUE INICIE CON UNDERSCORES:
+#   _PROTECTED (un underscore)
+#   __PRIVADO (dos underscores)
+
+print(persona.get_full_name())
+print(persona.full_name)

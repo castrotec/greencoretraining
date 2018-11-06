@@ -72,6 +72,8 @@ class Tank (Vehicle):
         print("Disparado!!!")
         return True
 
+    #Podemos sobreescribir los metodos del padre mediante def
+
 
 car = Tank(engine=None, color="Red", make="Audi",calibre=60)
 car.shoot()
